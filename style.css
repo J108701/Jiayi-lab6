@@ -93,9 +93,135 @@ nav {
     display: none;
     padding: 10px;
   }
+  .active, .accordion:hover {
+    background-color: #dfdfdf;
+  }
   
+  .panel {
+    padding: 0 18px;
+    background-color: #e0e0e0;
+    display: none;
+    overflow: hidden;
+  }
   /* Style for open accordion item */
   .accordion-item.open .accordion-content {
     display: block;
   }
+
+/* Styles for gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
   
+  /* Styles for images */
+  .gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  /* Styles for gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  /* Styles for images */
+  .gallery img {
+    width: 100%; 
+    height: auto; /* 高度自动调整，保持纵横比 */
+    transition: transform 0.3s ease; /* 添加变换效果 */
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 在小屏幕上，最小宽度为150px */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 在大屏幕上，最小宽度为250px */
+    }
+  }
+  
+  /* Footer CSS */
+footer {
+    background-color: #048b38b8; /* 保持原有颜色 */
+    color: #ffffff; /* 文字颜色 */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around; /* 在元素之间保持均匀间距 */
+    align-items: center; /* 使内容垂直居中 */
+    margin: 0 auto; /* 水平居中 */
+  }
+  
+  .footer-text {
+    text-align: left; /* 文本左对齐 */
+    flex: 1; /* 占用可用空间 */
+    padding: 0 20px; /* 添加一些内边距 */
+  }
+  
+  .google-map {
+    flex: 1; /* 占用可用空间 */
+    padding: 0 20px; /* 添加一些内边距 */
+    order: 2; /* 确保地图总是在右边 */
+  }
+  
+  .google-map iframe {
+    width: 50%; /* 使用其容器的全部宽度 */
+    height: 150px; /* 设置固定高度 */
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .footer-links li a {
+    color: #dddddd;
+    text-decoration: none;
+  }
+  
+  #copyright {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 800px) {
+    .footer-content {
+      flex-direction: column;
+    }
+    .footer-text, .google-map {
+      width: 100%;
+      padding: 20px 0; /* 调整为上下内边距，移除左右内边距 */
+    }
+    .google-map iframe {
+      height: 200px; /* 较小屏幕上的较小地图 */
+    }
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: center; /* 或者其他您喜欢的对齐方式 */
+    gap: 20px; /* 调整图标之间的间隔 */
+  }
+  
+  .footer-icons .material-icons {
+    font-size: 24px; /* 调整图标大小 */
+    color: hsl(0, 0%, 90%); /* 调整图标颜色，您可以改为任何您喜欢的颜色 */
+  }

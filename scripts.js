@@ -8,5 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
         item.classList.toggle('open');
       });
     });
+  
+    const images = document.querySelectorAll('.gallery img');
+    images.forEach(image => {
+      image.addEventListener('click', function () {
+        alert('You clicked on ' + this.alt);
+      });
+    });
   });
   
