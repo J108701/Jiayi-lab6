@@ -1,0 +1,101 @@
+/* Add styles for navigation menu */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Add styles for responsive hero banner */
+  .hero-image {
+    background-image: url('asset/IMG_9951.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-text {
+    color: #ffffff;
+  }
+  .hero-text {
+    background-color: rgba(1, 7, 5, 0.412); /* Adding a semi-transparent black background */
+    color: #fff;
+    padding: 20px; /* Adding padding for better readability */
+  }
+  .hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Madimi One', sans-serif;
+  }
+  .hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Madimi One', sans-serif;
+  }
+  .hero-text button {
+    background-color: #406956;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .hero-text button:hover {
+    background-color: #063502;
+  }
+  
+  /* Add styles for main content area */
+  .container {
+    padding: 20px;
+  }
+  .content-container {
+    margin-bottom: 40px;
+  }
+  .content-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Madimi One', sans-serif;
+  }
+  .content-container p {
+    font-size: 1.2em;
+    font-family: 'Madimi One', sans-serif;
+  }
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-header {
+    background-color: hsla(120, 32%, 62%, 0.563);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+  }
+  
+  /* Style for open accordion item */
+  .accordion-item.open .accordion-content {
+    display: block;
+  }
+  
